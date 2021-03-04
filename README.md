@@ -47,7 +47,7 @@ Java HotSpot(TM) 64-Bit Server VM GraalVM EE 20.3.0 (build 11.0.9+7-LTS-jvmci-20
 
 Install the native-image module.
 
-![user input](../images/userinput.png)
+![user input](images/userinput.png)
 
 ```
 C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-20.3.0.jar
