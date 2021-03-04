@@ -17,17 +17,17 @@ Install [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.8
 
 Open the Visual Studio Installer
 
-![](images/Screenshot 2020-11-30 120751.png)
+![](images/Screenshot2020-11-30120751.png)
 
 
 Under the ‘**Installed**’ tab, click on the ‘**Modify**’ button and choose ‘**Individual Components**’
  
-![](images/Screenshot 2020-11-30 120448.png)
-![](images/Screenshot 2020-11-30 120522.png)
+![](images/Screenshot2020-11-30120448.png)
+![](images/Screenshot2020-11-30120522.png)
 
 Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed
 
-![](images/Screenshot 2020-11-17 222749.png)
+![](images/Screenshot2020-11-17222749.png)
   
 Follow the [GraalVM install instructions for Windows](https://docs.oracle.com/en/graalvm/enterprise/20/docs/getting-started/installation-windows/)
 
@@ -47,7 +47,7 @@ Java HotSpot(TM) 64-Bit Server VM GraalVM EE 20.3.0 (build 11.0.9+7-LTS-jvmci-20
 
 Install the native-image module.
 
-![user input](../images/userinput.png
+![user input](../images/userinput.png)
 
 ```
 C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-20.3.0.jar
@@ -83,7 +83,7 @@ C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tool
 
 Or launch a Dev command prompt (via Visual Studio 2019):
 
-![](../images/Screenshot 2020-12-17 113140.png)
+![](../images/Screenshot2020-12-17113140.png)
 
 Create a basic application (`HelloWorld.java`):
 
