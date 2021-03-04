@@ -83,7 +83,7 @@ C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tool
 
 Or launch a Dev command prompt (via Visual Studio 2019):
 
-![](../images/Screenshot2020-12-17113140.png)
+![](images/Screenshot2020-12-17113140.png)
 
 Create a basic application (`HelloWorld.java`):
 
