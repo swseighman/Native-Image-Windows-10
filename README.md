@@ -12,8 +12,7 @@ C:\> choco install -y windows-sdk-10 kb2919442
 
    or
 
-Install the Windows SDK Using Visual Studio Code
-Install [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.8.x (Community will work)
+Install the Windows SDK Using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.8.x (Community will work)
 
 Open the Visual Studio Installer
 
