@@ -1,4 +1,4 @@
-<h1>GraalVM Native Image 20.3.0 and Basic Demos on Windows 10</h1>
+## GraalVM Native Image 21.0.0 and Basic Demos on Windows 10
 
 
 
@@ -28,7 +28,7 @@ Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed
 
 ![](images/Screenshot2020-11-17222749.png)
   
-Follow the [GraalVM install instructions for Windows](https://docs.oracle.com/en/graalvm/enterprise/20/docs/getting-started/installation-windows/)
+Follow the [GraalVM install instructions for Windows](https://docs.oracle.com/en/graalvm/enterprise/21/docs/getting-started/installation-windows/)
 
 Verify the GraalVM install
 
@@ -36,9 +36,7 @@ Verify the GraalVM install
 
 ```
 C:\> java -version
-java version "11.0.9" 2020-10-20 LTS
-Java(TM) SE Runtime Environment GraalVM EE 20.3.0 (build 11.0.9+7-LTS-jvmci-20.3-b06)
-Java HotSpot(TM) 64-Bit Server VM GraalVM EE 20.3.0 (build 11.0.9+7-LTS-jvmci-20.3-b06, mixed mode, sharing)
+java version "11.0.10" 2021-01-19 LTSJava(TM) SE Runtime Environment GraalVM EE 21.0.0 (build 11.0.10+8-LTS-jvmci-21.0-b06)Java HotSpot(TM) 64-Bit Server VM GraalVM EE 21.0.0 (build 11.0.10+8-LTS-jvmci-21.0-b06, mixed mode, sharing)
 ```
 
 [Download the native-image module](https://www.oracle.com/downloads/graalvm-downloads.html#license-lightbox)
@@ -49,7 +47,7 @@ Install the native-image module.
 ![user input](images/userinput.png)
 
 ```
-C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-20.3.0.jar
+C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-21.0.0.jar
 ```	
 
 
@@ -61,9 +59,7 @@ Check for installed modules
 C:\> gu list
 ComponentId             Version             Component name      Origin
 ------------------------------------------------------------------------
-js                      20.3.0              Graal.js
-graalvm                 20.3.0              GraalVM Core
-native-image            20.3.0              Native Image
+js                       21.0.0              Graal.js           -graalvm                  21.0.0              GraalVM Core       -native-image             21.0.0              Native Image       Early adopter
 ```
 
 Open a Windows command prompt to start a Visual Studio Dev session:
