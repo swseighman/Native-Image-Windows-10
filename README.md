@@ -80,6 +80,8 @@ Or launch a Dev command prompt (via Visual Studio 2019):
 
 ![](images/Screenshot2020-12-17113140.png)
 
+**Note:** On Windows, the `native-image` tool will only work when it is executed from the **x64 Native Tools Command Prompt**.
+
 Create a basic application (`HelloWorld.java`):
 
 ![user input](images/userinput.png)
