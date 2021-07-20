@@ -24,7 +24,7 @@ Under the ‘**Installed**’ tab, click on the ‘**Modify**’ button and choo
 ![](images/Screenshot2020-11-30120448.png)
 ![](images/Screenshot2020-11-30120522.png)
 
-Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed and make certain the builld tools are installed (see **Installation Details** on the right of the window).
+Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed and confirm the build tools are installed (see **Installation Details** on the right of the window).
 
 ![](images/Screenshot2020-11-17222749.png)
 
