@@ -28,7 +28,7 @@ Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed and 
 
 ![](images/Screenshot2020-11-17222749.png)
 
-**NOTE:** If you don't have Visual Studio installed, you'll also need to download and install the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (C development environment) to compile a native image exxecutable.
+**NOTE:** If you don't have Visual Studio installed, you'll also need to download and install the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (C development environment) to compile a native image executable.
 
 Once you have the Windows 10 SDK and the Build Tools installed, you can install GraalVM.
   
