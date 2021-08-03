@@ -30,6 +30,20 @@ Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed and 
 
 **NOTE:** If you don't have Visual Studio installed, you'll need to download and install the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (C development environment) to compile a native image executable.
 
+Start the Visual Studio Build Tools installation:
+
+![](images/vsbuildtools-1.png)
+
+Check the `Desktop development with C++` option and also choose the `Windows 10 SDK` on the right side of the screen and click the `Install` button.
+
+![](images/vsbuildtools-2.png)
+
+After the installation completes, you'll need to reboot your system.
+
+![](images/vsbuildtools-4.png)
+
+
+
 Once you have the Windows 10 SDK and the Build Tools installed, you can install GraalVM.
   
 Follow the [GraalVM install instructions for Windows](https://docs.oracle.com/en/graalvm/enterprise/21/docs/getting-started/installation-windows/)
