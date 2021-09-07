@@ -16,7 +16,7 @@ C:\> choco install -y windows-sdk-10 kb2919442
 
    or-->
 
-###Install Prerequistes via Visual Studio Code
+### Install Prerequistes via Visual Studio Code
 
 First, download and install Visual Studio Code 2019 via the link [here](https://visualstudio.microsoft.com/downloads/). 
 
