@@ -1,8 +1,13 @@
-## GraalVM Native Image 21.0.0 and Basic Demos on Windows 10
+## GraalVM Native Image 21.2.0 and Basic Demos on Windows 10
 
+When 
 
+There are two primary methods for installing the necessary prerequisites for creating a GraalVM native executable on Windows:
 
-Install the Windows SDK Using [Chocolatey](https://chocolatey.org/):
+* Install Visual Studio Code + the Windows 10 SDK
+* Install the Visual Studio Code Build Tools + the Windows 10 SDK
+
+<!--Install the Windows SDK Using [Chocolatey](https://chocolatey.org/):
 
 ![user input](images/userinput.png)
 
@@ -10,11 +15,17 @@ Install the Windows SDK Using [Chocolatey](https://chocolatey.org/):
 C:\> choco install -y windows-sdk-10 kb2919442
 ```
 
-   or
+   or-->
 
-Install the Windows SDK Using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.8.x (Community will work)
+###Install Prerequistes via Visual Studio Code
 
-Open the Visual Studio Installer
+First, download and install Visual Studio Code 2019 via the link [here](https://visualstudio.microsoft.com/downloads/). 
+
+Once you have Visual Studio Code installed (Community Edition will work), you'll need to add the Windows 10 SDK.
+
+<!--Install the Windows SDK Using [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 16.8.x (Community will work)-->
+
+Open the Visual Studio Installer:
 
 ![](images/Screenshot2020-11-30120751.png)
 
@@ -28,9 +39,11 @@ Scroll to the bottom and make certain ‘**Windows 10 SDK**’ is installed and 
 
 ![](images/Screenshot2020-11-17222749.png)
 
-**NOTE:** If you don't have Visual Studio installed, you'll need to download and install the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (C development environment) to compile a native image executable.
+### Install Prerequisites via Visual Studio Build Tools
 
-Start the Visual Studio Build Tools installation:
+If you prefer not to install Visual Studio Code 2019, you can opt to download and install the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (C development environment).
+
+After you download the tools, start the Visual Studio Build Tools installation:
 
 ![](images/vsbuildtools-1.png)
 
@@ -80,7 +93,7 @@ ComponentId             Version             Component name      Origin
 js                       21.0.0              Graal.js           -graalvm                  21.0.0              GraalVM Core       -native-image             21.0.0              Native Image       Early adopter
 ```
 
-Open a Windows command prompt to start a Visual Studio Dev session:
+If you have Visual Studio 2019 installed, open a Windows command prompt to start a Visual Studio Dev session:
 
 ![user input](images/userinput.png)
 
@@ -92,7 +105,11 @@ C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tool
      ** Copyright (c) 2020 Microsoft Corporation
      **********************************************************************
 ```
+or if you installed only the Build Tools:
 
+```
+C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+```
 
 Or launch a Dev command prompt (via Visual Studio 2019):
 
