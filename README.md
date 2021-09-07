@@ -1,6 +1,5 @@
 ## GraalVM Native Image 21.2.0 and Basic Demos on Windows 10
 
-When 
 
 There are two primary methods for installing the necessary prerequisites for creating a GraalVM native executable on Windows:
 
