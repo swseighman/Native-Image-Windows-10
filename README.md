@@ -213,7 +213,7 @@ or
 
 Install using instructions [here](https://micronaut-projects.github.io/micronaut-starter/latest/guide/index.html#installWindows). 
 
-Next, try the **Creating Your First Miconaut Graal Application** example [here](https://guides.micronaut.io/latest/micronaut-creating-first-graal-app-maven-java.html).
+Next, try the **Creating Your First Micronaut Graal Application** example [here](https://guides.micronaut.io/latest/micronaut-creating-first-graal-app-maven-java.html).
 
 NOTE: You may encounter some warning messages during the native image build but it should succeed.
 
