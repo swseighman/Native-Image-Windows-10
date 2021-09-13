@@ -79,9 +79,26 @@ Install the native-image module.
 ![user input](images/userinput.png)
 
 ```
-C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-21.0.0.jar
+C:\> gu -L install .\native-image-installable-svm-svmee-java11-windows-amd64-21.2.0.1.jar
 ```	
+**NOTE:** If you receive the following error, you'll need to run the command with Administrative privileges.
 
+```
+Error: Insufficient privileges for administration of the GraalVM installation. You need to become "BUILTIN\Administrators" user in order to perform administrative tasks on GraalVM.NOTE: depending on your operating system, you may need to use OS tools to install or uninstall GraalVM components.
+```
+
+You'll likely need to provide the full path to the `gu` command.  In my case:
+
+```
+C:\> "C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu" install -L .\native-image-installable-svm-svmee-java11-windows-amd64-21.2.0.1.jar
+```
+```C:\> "C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu" listComponentId              Version             Component name                Stability                     Origin---------------------------------------------------------------------------------------------------------------------------------graalvm                  21.2.0.1            GraalVM Core                  -js                       21.2.0.1            Graal.js                      Supportednative-image             21.2.0.1            Native Image                  Early adopter                 oca.opensource.oracle.com
+```
+Another option is to install the `native-image` module directly from the catalog:
+
+```
+C:\> C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu' install native-imageDownloading: Release index file from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0 on jdk11 from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0.1 on jdk11 from oca.opensource.oracle.comSkipping ULN EE channels, no username provided.Downloading: Component catalog from www.graalvm.orgProcessing Component: Native ImageDownloading: Downloading license: Oracle GraalVM Enterprise Edition Native Image License from oca.opensource.oracle.comThe component(s) Native Image requires to accept the following license: Oracle GraalVM Enterprise Edition Native Image LicenseEnter "Y" to confirm and accept all the license(s). Enter "R" to the see license text.Any other input will abort installation:  YPlease provide an e-mail address (optional). You may want to check Oracle Privacy Policy (https://www.oracle.com/legal/privacy/privacy-policy.html).Enter a valid e-mail address: <your-email>Downloading: Component native-image: Native Image  from oca.opensource.oracle.comInstalling new component: Native Image (org.graalvm.native-image, version 21.2.0.1)
+```
 
 Check for installed modules
 
@@ -99,7 +116,7 @@ If you have Visual Studio 2019 installed, open a Windows command prompt to start
 ![user input](images/userinput.png)
 
 ```
-C:\> C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\vcvars64.bat
+C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\vcvars64.bat"
 ```
 
 or if you installed only the Build Tools:
