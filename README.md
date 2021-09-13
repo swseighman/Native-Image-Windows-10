@@ -109,6 +109,7 @@ ComponentId              Version             Component name                Stabi
 native-image             21.2.0.1            Native Image                  Early adopter                 oca.opensource.
 ```
 
+#### Launch a Command Prompt
 If you have Visual Studio 2019 installed, open a Windows command prompt to start a Visual Studio Dev session:
 
 ![user input](images/userinput.png)
@@ -129,9 +130,11 @@ Or launch a Dev command prompt (via Visual Studio 2019):
 
 **Note:** On Windows, the `native-image` tool will only work when it is executed from the **x64 Native Tools Command Prompt**.
 
-Create a basic application (`HelloWorld.java`):
+#### Create a basic application
 
 ![user input](images/userinput.png)
+
+Open your favorite editor and create a file called `HelloWorld.java`:
  
 ```
 public class HelloWorld {
@@ -141,7 +144,7 @@ public class HelloWorld {
 }
 ```
 
-Compile
+Compile the app:
 
 ![user input](images/userinput.png)
 
@@ -149,7 +152,7 @@ Compile
 C:\> javac HelloWorld
 ```
 
-Create a Native Image
+Next, let's create a Native Image of the same application:
 
 ![user input](images/userinput.png)
 
@@ -175,7 +178,7 @@ C:\> native-image HelloWorld
 ```
 
 
-Run the Native Image version
+Run the Native Image version:
 
 ![user input](images/userinput.png)
 
@@ -189,19 +192,7 @@ Measure Startup Time (_in PowerShell_):
 ![user input](images/userinput.png)
 
 ```    
-C:\> Measure-Command {".\helloworld"}
-    
-Days              : 0
-Hours             : 0
-Minutes           : 0
-Seconds           : 0
-Milliseconds      : 3
-Ticks             : 38000
-TotalDays         : 4.39814814814815E-08
-TotalHours        : 1.05555555555556E-06
-TotalMinutes      : 6.33333333333333E-05
-TotalSeconds      : 0.0038
-TotalMilliseconds : 3.8
+C:\> Measure-Command {".\helloworld"}Days              : 0Hours             : 0Minutes           : 0Seconds           : 0Milliseconds      : 0Ticks             : 779TotalDays         : 9.0162037037037E-10TotalHours        : 2.16388888888889E-08TotalMinutes      : 1.29833333333333E-06TotalSeconds      : 7.79E-05TotalMilliseconds : 0.0779
     
 ```
 	
