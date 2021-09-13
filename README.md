@@ -294,7 +294,7 @@ C:\> prettyprintjson
 	<enter> CTRL-Z <enter>
 ```
 
-Here's the output you should see displayed:
+Here's the output you should expect:
 
 ```
 {
