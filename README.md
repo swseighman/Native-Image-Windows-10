@@ -97,13 +97,9 @@ If you have Visual Studio 2019 installed, open a Windows command prompt to start
 ![user input](images/userinput.png)
 
 ```
-C:\> "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\vsdevcmd" -arch=amd64
-
-     **********************************************************************
-     ** Visual Studio 2019 Developer Command Prompt v16.8.1
-     ** Copyright (c) 2020 Microsoft Corporation
-     **********************************************************************
+C:\> C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\vcvars64.bat
 ```
+
 or if you installed only the Build Tools:
 
 ```
