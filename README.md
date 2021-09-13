@@ -195,6 +195,9 @@ Measure Startup Time (_in PowerShell_):
 C:\> Measure-Command {".\helloworld"}Days              : 0Hours             : 0Minutes           : 0Seconds           : 0Milliseconds      : 0Ticks             : 779TotalDays         : 9.0162037037037E-10TotalHours        : 2.16388888888889E-08TotalMinutes      : 1.29833333333333E-06TotalSeconds      : 7.79E-05TotalMilliseconds : 0.0779
     
 ```
+
+Notice the application completed in .0779 milliseconds!
+
 	
 **Micronaut Example**
 
