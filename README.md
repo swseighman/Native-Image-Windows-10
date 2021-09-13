@@ -68,7 +68,7 @@ Verify the GraalVM install
 
 ```
 C:\> java -version
-java version "11.0.10" 2021-01-19 LTSJava(TM) SE Runtime Environment GraalVM EE 21.0.0 (build 11.0.10+8-LTS-jvmci-21.0-b06)Java HotSpot(TM) 64-Bit Server VM GraalVM EE 21.0.0 (build 11.0.10+8-LTS-jvmci-21.0-b06, mixed mode, sharing)
+java version "11.0.12" 2021-07-20 LTSJava(TM) SE Runtime Environment GraalVM EE 21.2.0.1 (build 11.0.12+8-LTS-jvmci-21.2-b08)Java HotSpot(TM) 64-Bit Server VM GraalVM EE 21.2.0.1 (build 11.0.12+8-LTS-jvmci-21.2-b08, mixed mode, sharing)
 ```
 
 [Download the native-image module](https://www.oracle.com/downloads/graalvm-downloads.html#license-lightbox)
@@ -92,12 +92,11 @@ You'll likely need to provide the full path to the `gu` command.  In my case:
 ```
 C:\> "C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu" install -L .\native-image-installable-svm-svmee-java11-windows-amd64-21.2.0.1.jar
 ```
-```C:\> "C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu" listComponentId              Version             Component name                Stability                     Origin---------------------------------------------------------------------------------------------------------------------------------graalvm                  21.2.0.1            GraalVM Core                  -js                       21.2.0.1            Graal.js                      Supportednative-image             21.2.0.1            Native Image                  Early adopter                 oca.opensource.oracle.com
-```
+
 Another option is to install the `native-image` module directly from the catalog:
 
 ```
-C:\> C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu' install native-imageDownloading: Release index file from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0 on jdk11 from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0.1 on jdk11 from oca.opensource.oracle.comSkipping ULN EE channels, no username provided.Downloading: Component catalog from www.graalvm.orgProcessing Component: Native ImageDownloading: Downloading license: Oracle GraalVM Enterprise Edition Native Image License from oca.opensource.oracle.comThe component(s) Native Image requires to accept the following license: Oracle GraalVM Enterprise Edition Native Image LicenseEnter "Y" to confirm and accept all the license(s). Enter "R" to the see license text.Any other input will abort installation:  YPlease provide an e-mail address (optional). You may want to check Oracle Privacy Policy (https://www.oracle.com/legal/privacy/privacy-policy.html).Enter a valid e-mail address: <your-email>Downloading: Component native-image: Native Image  from oca.opensource.oracle.comInstalling new component: Native Image (org.graalvm.native-image, version 21.2.0.1)
+C:\> "C:\Program Files\Java\graalvm-ee-java11-21.2.0.1\bin\gu" install native-imageDownloading: Release index file from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0 on jdk11 from oca.opensource.oracle.comDownloading: Component catalog for GraalVM Enterprise Edition 21.2.0.1 on jdk11 from oca.opensource.oracle.comSkipping ULN EE channels, no username provided.Downloading: Component catalog from www.graalvm.orgProcessing Component: Native ImageDownloading: Downloading license: Oracle GraalVM Enterprise Edition Native Image License from oca.opensource.oracle.comThe component(s) Native Image requires to accept the following license: Oracle GraalVM Enterprise Edition Native Image LicenseEnter "Y" to confirm and accept all the license(s). Enter "R" to the see license text.Any other input will abort installation:  YPlease provide an e-mail address (optional). You may want to check Oracle Privacy Policy (https://www.oracle.com/legal/privacy/privacy-policy.html).Enter a valid e-mail address: <your-email>Downloading: Component native-image: Native Image  from oca.opensource.oracle.comInstalling new component: Native Image (org.graalvm.native-image, version 21.2.0.1)
 ```
 
 Check for installed modules
@@ -106,9 +105,8 @@ Check for installed modules
 
 ```
 C:\> gu list
-ComponentId             Version             Component name      Origin
-------------------------------------------------------------------------
-js                       21.0.0              Graal.js           -graalvm                  21.0.0              GraalVM Core       -native-image             21.0.0              Native Image       Early adopter
+ComponentId              Version             Component name                Stability                     Origin---------------------------------------------------------------------------------------------------------------------------------graalvm                  21.2.0.1            GraalVM Core                  -js                       21.2.0.1            Graal.js                      Supported
+native-image             21.2.0.1            Native Image                  Early adopter                 oca.opensource.
 ```
 
 If you have Visual Studio 2019 installed, open a Windows command prompt to start a Visual Studio Dev session:
