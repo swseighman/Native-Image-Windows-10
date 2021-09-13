@@ -234,7 +234,7 @@ C:\Users\Downloads\micronaut> mvnw package -Dpackaging=docker-native -Pgraalvm
 
 **Polyglot Example**
 
-Edit source (`PrettyPrintJSON.java`):
+Open your favorite editor and create a file called `PrettyPrintJSON.java`:
 
 ![user input](images/userinput.png)
 
@@ -266,7 +266,7 @@ Compile the code:
 C:\> javac PrettyPrintJSON.java
 ```
 
-Create a Native Image:
+Create a Native Image executable:
 
 ![user input](images/userinput.png)
 
@@ -317,3 +317,9 @@ Here's the output you should expect:
       }
     }
 ```
+
+#### Next Steps
+
+If you're so inclined, try some additional native image samples by cloning [this repository](https://github.com/graalvm/graalvm-demos/tree/master/native-image-workshop).  The samples will walk you through a number of GraalVM Native Image features.
+
+Have fun!
