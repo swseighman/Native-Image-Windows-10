@@ -199,9 +199,15 @@ C:\> Measure-Command {".\helloworld"}Days              : 0Hours             :
 Notice the application completed in .0779 milliseconds!
 
 	
-**Micronaut Example**
+### Micronaut Example
 
-Install Micronaut using [Chocolatey](https://chocolatey.org/):
+Micronaut is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications. In fact, any Micronaut application can be compiled into a native image executable using the Micronaut Gradle or Maven plugins.
+
+Let's get started!
+
+You can install Micronaut using [Chocolatey](https://chocolatey.org/) or by downloading a binary.
+
+#### Using Chocolatey
 
 ![user input](images/userinput.png)
 
@@ -209,9 +215,21 @@ Install Micronaut using [Chocolatey](https://chocolatey.org/):
 C:\> choco install -y micronaut
 ```
 
-or
+#### Using a Binary (or Source)
 
-Install using instructions [here](https://micronaut-projects.github.io/micronaut-starter/latest/guide/index.html#installWindows). 
+You can install Micronaut using the instructions [here](https://micronaut-projects.github.io/micronaut-starter/latest/guide/index.html#installWindows). 
+
+The Micronaut 3.01 binary for Windows can be downloaded [here](https://github.com/micronaut-projects/micronaut-starter/releases/download/v3.0.1/mn-win-amd64-v3.0.1.zip).
+
+![user input](images/userinput.png)
+
+Confirm that Micronaut installed successfully:
+
+```
+C:\> mn --version
+Micronaut Version: 3.01
+```
+
 
 Next, try the **Creating Your First Micronaut Graal Application** example [here](https://guides.micronaut.io/latest/micronaut-creating-first-graal-app-maven-java.html).
 
@@ -239,7 +257,11 @@ For the container build, you'll need to pass a profile flag (`-Pgraalvm`):
 C:\Users\Downloads\micronaut> mvnw package -Dpackaging=docker-native -Pgraalvm
 ```
 
-**Polyglot Example**
+### Polyglot Example
+
+GraalVM provides high performance runtime support for a number of languages beyond Java along with the ability to have different languages and libraries interoperate with no performance penalty. 
+
+GraalVM makes it possible to use polyglot capabilities when building native images. In this example, we'll create a Java program that embeds some JavaScript code.
 
 Open your favorite editor and create a file called `PrettyPrintJSON.java`:
 
