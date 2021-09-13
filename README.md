@@ -213,6 +213,19 @@ or
 
 Install using instructions [here](https://micronaut-projects.github.io/micronaut-starter/latest/guide/index.html#installWindows). 
 
+Next, try the **Creating Your First Miconaut Graal Application** example [here](https://guides.micronaut.io/latest/micronaut-creating-first-graal-app-maven-java.html).
+
+NOTE: You may encounter some warning messages during the native image build but it should succeed.
+
+```
+C:\Users\Downloads\micronaut-demo> target\micronautguide.exe __  __ _                                  _|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|| |  | | | (__| | | (_) | | | | (_| | |_| | |_|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|  Micronaut (v3.0.1)12:59:20.625 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 449ms. Server Running: http://localhost:8080
+```
+The native image executable starts in **449ms**.  By comparison, the JAR version of the demo app starts in **1398ms**.
+
+```
+C:\Users\Downloads\micronaut> java -jar target\micronautguide-0.1.jar
+ __  __ _                                  _|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|| |  | | | (__| | | (_) | | | | (_| | |_| | |_|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|  Micronaut (v3.0.1)12:56:59.482 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 1398ms. Server Running: http://localhost:8080
+```
 
 **Polyglot Example**
 
