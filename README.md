@@ -280,12 +280,23 @@ Run the application:
 
 ![user input](images/userinput.png)
 
+After starting the application, enter the following JSON on the blank line:
+```
+{"GraalVM":{"description":"Language Abstraction Platform","supports":["combining languages","embedding languages","creating native images"],"languages": ["Java","JavaScript","Node.js", "Python", "Ruby","R","LLVM"]}}
+```
+
+Then `Enter` `CTRL-Z` `Enter`
+
 ```
 C:\> prettyprintjson
 
 {"GraalVM":{"description":"Language Abstraction Platform","supports":["combining languages","embedding languages","creating native images"],"languages": 	["Java","JavaScript","Node.js", "Python", "Ruby","R","LLVM"]}} 
 	<enter> CTRL-Z <enter>
+```
 
+Here's the output you should see displayed:
+
+```
 {
      "GraalVM": {
       "description": "Language Abstraction Platform",
