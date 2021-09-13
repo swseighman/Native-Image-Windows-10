@@ -217,15 +217,22 @@ Next, try the **Creating Your First Micronaut Graal Application** example [here]
 
 NOTE: You may encounter some warning messages during the native image build but it should succeed.
 
+![user input](images/userinput.png)
+
 ```
 C:\Users\Downloads\micronaut-demo> target\micronautguide.exe __  __ _                                  _|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|| |  | | | (__| | | (_) | | | | (_| | |_| | |_|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|  Micronaut (v3.0.1)12:59:20.625 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 449ms. Server Running: http://localhost:8080
 ```
 The native image executable starts in **449ms**.  By comparison, the JAR version of the demo app starts in **1398ms**.
 
+![user input](images/userinput.png)
+
 ```
 C:\Users\Downloads\micronaut> java -jar target\micronautguide-0.1.jar
  __  __ _                                  _|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|| |  | | | (__| | | (_) | | | | (_| | |_| | |_|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|  Micronaut (v3.0.1)12:56:59.482 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 1398ms. Server Running: http://localhost:8080
 ```
+
+![user input](images/userinput.png)
+
 For the container build, you'll need to pass a profile flag (`-Pgraalvm`):
 
 ```
@@ -278,14 +285,14 @@ With Windows, when you are ready to complete the input, press the `Enter` key an
 
 Run the application:
 
-![user input](images/userinput.png)
-
 After starting the application, enter the following JSON on the blank line:
 ```
 {"GraalVM":{"description":"Language Abstraction Platform","supports":["combining languages","embedding languages","creating native images"],"languages": ["Java","JavaScript","Node.js", "Python", "Ruby","R","LLVM"]}}
 ```
 
 Then `Enter` `CTRL-Z` `Enter`
+
+![user input](images/userinput.png)
 
 ```
 C:\> prettyprintjson
