@@ -226,6 +226,11 @@ The native image executable starts in **449ms**.  By comparison, the JAR version
 C:\Users\Downloads\micronaut> java -jar target\micronautguide-0.1.jar
  __  __ _                                  _|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|| |  | | | (__| | | (_) | | | | (_| | |_| | |_|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|  Micronaut (v3.0.1)12:56:59.482 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 1398ms. Server Running: http://localhost:8080
 ```
+For the container build, you'll need to pass a profile flag (`-Pgraalvm`):
+
+```
+C:\Users\Downloads\micronaut> mvnw package -Dpackaging=docker-native -Pgraalvm
+```
 
 **Polyglot Example**
 
