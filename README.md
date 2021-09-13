@@ -60,6 +60,8 @@ Once you have the Windows 10 SDK and the Build Tools installed, you can install 
   
 Follow the [GraalVM install instructions for Windows](https://docs.oracle.com/en/graalvm/enterprise/21/docs/getting-started/installation-windows/)
 
+**NOTE:** You can ignore the **Prerequisites for Using Native Image on Windows** section.
+
 Verify the GraalVM install
 
 ![user input](images/userinput.png)
